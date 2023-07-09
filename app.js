@@ -75,7 +75,7 @@ app.post("/contact",async (req,res)=>{
   try{
     const result = await newForm.save();
     console.log("Inserted...");
-    res.render("Success");
+    res.render("success");
   }catch(err){
     res.render("failure");
     console.log(err);
@@ -85,9 +85,7 @@ app.post("/contact",async (req,res)=>{
 app.post("/failure",(req,res)=>{
   res.redirect("/contact");
 });
-app.post("/success",(req,res)=>{
-  res.redirect("/");
-});
+
 
 app.listen(process.env.PORT||3000, function() {
   console.log("Server started on port 3000");
