@@ -8,6 +8,10 @@
   },
   "author": "Bishal Pal & Abhishek Das",
   "license": "ISC",
+  "engines":{
+    "node":"18.15.0"
+
+  },
   "dependencies": {
     "alert": "^5.1.4",
     "body-parser": "^1.20.2",
