@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>WEBSYSTEM</title>
+      <title>WEBSYSTEMS</title>
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/styl.css">
@@ -46,7 +46,7 @@
 
             <nav class="nav">
                   <span id="brand">
-                        <a href="index.html">WEBSYSTEM</a>
+                        <a href="/">WEBSYSTEMS</a>
                   </span>
 
                   <ul id="menu">
@@ -98,7 +98,7 @@
 
                               <div class="row">
                                     <div class="col-md-4"></div>
-                                    <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s"><h1>Welcome to websystem, your premier destination for professional website design and development services.  </h1></div>
+                                    <div class="col-md-6 section-subheading wow fadeInUp" data-wow-delay="0.5s"><h1>Welcome to websystems, your premier destination for professional website design and development services.  </h1></div>
                               </div>
 
                               <div class="row">
@@ -246,8 +246,8 @@
                                     </div>
 
                                     <div class="" data-wow-delay="0.4s">
-                                          <form class="input-group wow fadeInUp" action="/" method="post">
-                                            <input type="email" class="form-control" placeholder="Enter your email" name="email">
+                                          <form class="input-group wow fadeInUp" action="/" method="post" name="form1" onsubmit="ValidateEmail(document.form1.text1)">
+                                            <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required />
                                             <span class="input-group-btn">
                                                   <button class="btn" type="submit">Subscribe</button>
                                             </span>
@@ -325,7 +325,7 @@
 
                                     <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" id="mail">
                                           <p>Say Hello</p>
-                                          <h4>contact@websystem.com</h4>
+                                          <h4><a href="mailto:contact.worksystem@gmail.com">contact.worksystem@gmail.com</a></h4>
 
                                           <br><br>
                                     </div>
@@ -406,6 +406,8 @@ $('a[href*="#"]')
       }
     }
   });
+
+
 
 
 </script>

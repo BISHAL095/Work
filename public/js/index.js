@@ -59,3 +59,26 @@ $('a[href*="#"]')
       }
     }
   });
+
+  // --------  Email validation  -----------------------------------------------
+  function ValidateEmail(i) {
+
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    var val = document.getElementById("email").value;
+    val = val.replace(/\D/g, '');
+
+    if (val.value.match(validRegex) && !(isNaN(val))) {
+
+      return true;
+
+    } else {
+
+      alert("Invalid email address!");
+
+
+      return false;
+
+    }
+
+  }
