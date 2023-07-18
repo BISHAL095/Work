@@ -13,7 +13,13 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
+app.use((req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https' && process.env.NODE_ENV === 'production') {
+    res.redirect(301, `https://${req.hostname}${req.url}`);
+  } else {
+    next();
+  }
+});
 
 // ------------------  MONGOOSE CONNECTION  ------------------------------------
 //mongodb selection and setting...
