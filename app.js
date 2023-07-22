@@ -59,6 +59,13 @@ app.get("/",(req,res)=>{
   res.render("index");
 });
 
+// Route to render the robots.txt file using EJS
+app.get('/robots.txt', (req, res) => {
+  res.type('text/plain');
+  res.render('robots');
+});
+
+
 app.post("/",(req,res)=>{
   const cust = new Email({
     email:req.body.email
